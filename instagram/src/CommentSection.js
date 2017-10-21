@@ -9,7 +9,7 @@ class CommentSection extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  }S
   componentDidMount() {
     this.setState ({comments: this.props.comments});
   }
