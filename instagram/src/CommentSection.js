@@ -5,10 +5,13 @@ class CommentSection extends React.Component {
     super(props);
     this.state = {
       input: '',
-      comments: this.props.comments
+      comments: []
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  componentDidMount() {
+    this.setState ({comments: this.props.comments});
   }
   handleChange(event) {
     this.setState({ input: event.target.value });
